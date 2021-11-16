@@ -53,6 +53,7 @@ body {
 }
 
 .header-logo {
+  margin-right: 93px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -71,10 +72,10 @@ body {
 }
 
 .main-nav {
-  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-list-item {
@@ -112,6 +113,7 @@ body {
 
 .header-contact-list {
   display: flex;
+  margin-left: auto;
 }
 
 .header-contact-list .header-contact + .header-contact {
@@ -126,6 +128,8 @@ body {
 /* HERO */
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-tittle {
@@ -168,6 +172,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.values {
+  padding-bottom: 0;
 }
 
 .values-list {
@@ -252,7 +260,7 @@ body {
 }
 
 .team-item-tittle {
-  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -264,9 +272,13 @@ body {
 .team-list > .team-list-item + .team-list-item {
   margin-left: 30px;
 }
-.team-item-text {
-  margin-top: 10px;
+
+.team-card-text {
+  margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.team-item-text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -310,14 +322,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 .portfolio-items {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
+  margin-top: 30px;
 }
 
 .portfolio-img {
@@ -325,7 +336,6 @@ body {
 }
 
 .portfolio-tittle-items {
-  margin-top: 20px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -335,11 +345,17 @@ body {
 }
 
 .portfolio-text {
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.portfolio-card-text {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* FOOTER */
@@ -350,6 +366,9 @@ body {
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 30px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -368,7 +387,6 @@ body {
 }
 
 .footer-map {
-  margin-top: 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -384,6 +402,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact:not(:last-child) {
-  margin: 9px 0;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
