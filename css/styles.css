@@ -49,7 +49,9 @@ body {
 
 /* HEADER */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -74,8 +76,6 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-nav-list-item {
@@ -274,8 +274,8 @@ body {
 }
 
 .team-card-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item-text {
